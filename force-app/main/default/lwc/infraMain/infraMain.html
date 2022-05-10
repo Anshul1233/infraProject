@@ -1,6 +1,12 @@
 <template>
     <lightning-card title="INFRA card">
         hello son and daughter
-        <h1>My name is lakhan</h1>
+        <h1>My name is lakhan</h1><br/>
+        <lightning-input label="Name" value={name}></lightning-input><br/>
+        <lightning-button label="Send" onclick={sendHandler}></lightning-button><br/>
+
+        <template if:true={flag}>
+            Name : {name}
+        </template>
     </lightning-card>
 </template>
